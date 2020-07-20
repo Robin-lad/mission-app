@@ -10,10 +10,7 @@ public class MissionAppApplication {
 	public static void main(String[] args) {
 
 		try (ConfigurableApplicationContext context = SpringApplication.run(MissionAppApplication.class, args)) {
-
-			Runnable exec = context.getBean(Runnable.class);
-			
-			exec.run();
+	
 		}
 	}
 }
